@@ -858,16 +858,16 @@ links:
   # Member item of page
   items:
     - {
-      title: "Fluid Blog",
-      intro: "主题博客",
-      link: "https://hexo.fluid-dev.com/",
-      avatar: "/img/favicon.png"
+      title: "My Knowledge Base",
+      intro: "我的语雀知识库",
+      link: "https://www.yuque.com/mengyingjie",
+      avatar: "/img/yuque.jpg"
     }
     - {
-      title: "Fluid Docs",
-      intro: "主题使用指南",
-      link: "https://hexo.fluid-dev.com/docs/",
-      avatar: "/img/favicon.png"
+      title: "My Old Blog",
+      intro: "我的博客老地址",
+      link: "https://www.mengyingjie.com/",
+      avatar: "/img/avatar.png"
     }
     - {
       title: "Fluid Repo",
