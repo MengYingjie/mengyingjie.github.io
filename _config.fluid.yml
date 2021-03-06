@@ -837,7 +837,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/default-4.jpg
+  banner_img: /img/default-8.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
   subtitle: "Page not found"
@@ -849,7 +849,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/default-14.jpg
+  banner_img: /img/default-7.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
@@ -866,7 +866,7 @@ links:
       title: "My Old Blog",
       intro: "我的博客老地址",
       link: "https://www.mengyingjie.com/",
-      avatar: "/img/avatar.png"
+      avatar: "/img/myj-2.png"
     }
     - {
       title: "Fluid Repo",
