@@ -816,7 +816,7 @@ about:
     - { class: "iconfont icon-github-fill", link: "https://github.com/mengyingjie", tip: "GitHub" }
     - { class: "iconfont icon-bilibili-fill", link: "https://space.bilibili.com/99029356", tip: "B站" }
     - { class: "iconfont icon-qq-fill", qrcode: "/img/qq.jpg" }
-    - { class: "iconfont icon-wechat-fill", qrcode: "/img/wx-1.jpg.png" }
+    - { class: "iconfont icon-wechat-fill", qrcode: "/img/wx-1.jpg" }
 
 
 #---------------------------
