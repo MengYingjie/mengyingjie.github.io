@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>🤔为什么JAVA内部类要设计成静态和非静态</title>
+    <link href="/archives/%E4%B8%BA%E4%BB%80%E4%B9%88JAVA%E5%86%85%E9%83%A8%E7%B1%BB%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%88%90%E9%9D%99%E6%80%81%E5%92%8C%E9%9D%9E%E9%9D%99%E6%80%81/"/>
+    <url>/archives/%E4%B8%BA%E4%BB%80%E4%B9%88JAVA%E5%86%85%E9%83%A8%E7%B1%BB%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%88%90%E9%9D%99%E6%80%81%E5%92%8C%E9%9D%9E%E9%9D%99%E6%80%81/</url>
+    
+    <content type="html"><![CDATA[<h3 id="📋两种内部类用法"><a href="#📋两种内部类用法" class="headerlink" title="📋两种内部类用法"></a>📋两种内部类用法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Outer</span> </span>&#123;<br><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inner</span> </span>&#123;&#125;<br><span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StaticInner</span> </span>&#123;&#125;<br>&#125;<br><br>Outer outer = <span class="hljs-keyword">new</span> Outer();<br>Outer.Inner inner = outer.<span class="hljs-function">new <span class="hljs-title">Inner</span><span class="hljs-params">()</span></span>;<br>Outer.StaticInner inner0 = <span class="hljs-keyword">new</span> Outer.StaticInner();<br></code></pre></td></tr></table></figure><h3 id="🤔为什么设计内部类"><a href="#🤔为什么设计内部类" class="headerlink" title="🤔为什么设计内部类"></a>🤔为什么设计内部类</h3><p>1 在一个类内部，需要操作某种属性，而这个属性需要涉及的面又很广，我们可以考虑，将这些属性设计为内部类。</p><p>2 好比你设计类 B 的目的只是为了给类 A 使用，那么，我们就可将其设定为内部类，没有必要将类 B 设置成单独的 Java 文件，防止与其他类产生依赖关系。</p><h3 id="🎲解释"><a href="#🎲解释" class="headerlink" title="🎲解释"></a>🎲解释</h3><p>根据Oracle官方的说法：<br>Nested classes are divided into two categories: static and non-static. Nested classes that are declared static are called <em><strong>static nested classes</strong></em>. Non-static nested classes are called <em><strong>inner classes</strong></em>.<br>从字面上看，一个被称为静态嵌套类，一个被称为内部类。</p><p>从字面的角度解释是这样的：</p><p>1 什么是嵌套？嵌套就是我跟你没关系，自己可以完全独立存在，但是我就想借你的壳用一下，来隐藏一下我自己（真TM猥琐）。没有你，我也可以创建实例.</p><p>2 什么是内部？内部就是我是你的一部分，我了解你，我知道你的全部（自由使用外部类的所有变量和方法），没有你就没有我。（所以内部类对象是以外部类对象存在为前提的）</p><h3 id="🎬运用场景"><a href="#🎬运用场景" class="headerlink" title="🎬运用场景"></a>🎬运用场景</h3><p>1 那么，在设计内部类的时候我们就可以做出权衡：如果我内部类与你外部类关系不紧密，耦合程度不高，不需要访问外部类的所有属性或方法，那么我就设计成静态内部类。它可以降低包的深度，方便类的使用和管理类结构，而且，由于静态内部类与外部类并不会保存相互之间的引用，因此在一定程度上，还会节省那么一点内存资源，何乐而不为呢~~</p><p>2 既然上面已经说了什么时候应该用静态内部类，那么如果你的需求不符合静态内部类所提供的一切好处，你就应该考虑使用内部类了。最大的特点就是：你在内部类中需要访问有关外部类的所有属性及方法，我知晓你的一切… … </p><blockquote><p>官网场景用例介绍<br>传送门：<a href="http://docs.oracle.com/javase/tutorial/java/javaOO/nested.html">http://docs.oracle.com/javase/</a></p></blockquote><blockquote><p>参考<br>链接：<a href="https://www.zhihu.com/question/28197253/answer/39814613">https://www.zhihu.com/question/28197253/answer/39814613</a></p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>java</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>java</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>🎯美团笔试-空间回廊</title>
     <link href="/archives/%E7%BE%8E%E5%9B%A2%E7%AC%94%E8%AF%95-%E7%A9%BA%E9%97%B4%E5%9B%9E%E5%BB%8A/"/>
     <url>/archives/%E7%BE%8E%E5%9B%A2%E7%AC%94%E8%AF%95-%E7%A9%BA%E9%97%B4%E5%9B%9E%E5%BB%8A/</url>

@@ -20,7 +20,7 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-  <title>🎯美团笔试-空间回廊 - 孟应杰の小天地</title>
+  <title>🤔为什么JAVA内部类要设计成静态和非静态 - 孟应杰の小天地</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -177,7 +177,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="🎯美团笔试-空间回廊">
+            <span class="h2" id="subtitle" title="🤔为什么JAVA内部类要设计成静态和非静态">
               
             </span>
 
@@ -187,8 +187,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-03-04 09:39" pubdate>
-        2021年3月4日 上午
+      <time datetime="2021-03-07 09:50" pubdate>
+        2021年3月7日 上午
       </time>
     </span>
   
@@ -199,7 +199,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      881 字
+      628 字
     </span>
   
 
@@ -209,7 +209,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      10
+      7
        分钟
     </span>
   
@@ -239,27 +239,24 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">🎯美团笔试-空间回廊</h1>
+            <h1 style="display: none">🤔为什么JAVA内部类要设计成静态和非静态</h1>
             
             <div class="markdown-body">
-              <blockquote>
-<p><a target="_blank" rel="noopener" href="http://www.mengyingjie.com/">⭐ 孟应杰的网站: www.mengyingjie.com ⭐</a></p>
-</blockquote>
-<h3 id="📌题目描述："><a href="#📌题目描述：" class="headerlink" title="📌题目描述："></a>📌题目描述：</h3><p>有一款叫做空间回廊的游戏，游戏中有着n个房间依次相连，如图，1号房间可以走到2号房间，以此类推，n号房间可以走到1号房间。</p>
-<p>这个游戏的最终目的是为了在这些房间中留下尽可能多的烙印，在每个房间里留下烙印所花费的法力值是不相同的，已知他共有m点法力值，这些法力是不可恢复的。</p>
-<p><img src="36-1.jpg" srcset="/img/loading.gif"></p>
-<p>小明刚接触这款游戏，所以只会耿直的玩，所以他的每一个行动都是可以预料的：</p>
-<p>1.一开始小明位于1号房间。<br>2.如果他剩余的法力能在当前的房间中留下一个烙印，那么他就会毫不犹豫的花费法力值。<br>3.无论是否留下了烙印，下一个时刻他都会进入下一个房间，如果当前位于i房间，则会进入i+1房间，如果在n号房间则会进入1号房间。<br>4.当重复经过某一个房间时，可以再次留下烙印。</p>
-<p>很显然，这个游戏是会终止的，即剩余的法力值不能在任何房间留下烙印的时候，游戏终止。请问他共能留下多少个烙印。</p>
-<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>输入第一行有两个正整数n和m，分别代表房间数量和小明拥有的法力值。(1&lt;=n&lt;=100000,1&lt;=m&lt;=10^18)<br>输入第二行有n个正整数，分别代表1~n号房间留下烙印的法力值花费。(1&lt;=a_i&lt;=10^9)</p>
-<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>输出仅包含一个整数，即最多能留下的烙印。</p>
-<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><p>4 21<br>2 1 4 3</p>
-<h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><p>9</p>
-<h4 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h4><p>样例解释：<br>显然是所有房间都留下两个烙印，然后剩下1点法力值，仅能在2号房间再留下一个烙印.</p>
-<h3 id="⌨代码实现"><a href="#⌨代码实现" class="headerlink" title="⌨代码实现"></a>⌨代码实现</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-comment">//输入房间数量m，小明拥有的法力值n</span><br>    <span class="hljs-keyword">int</span> n, m;<br>    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m;<br>    <span class="hljs-comment">//输入每个房间消耗的法力值</span><br>    <span class="hljs-keyword">int</span> arr[n];<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)&#123;<br>        <span class="hljs-built_in">cin</span> &gt;&gt; arr[i];<br>    &#125;<br>    <span class="hljs-comment">//定义两个变量，cnt用来计数，记录留下的烙印数</span><br>    <span class="hljs-comment">//sign,为设立的标志，当小明在一圈中消耗过法力值，标志位置为1，</span><br>    <span class="hljs-comment">//如果一圈下来sign=0，那么代表这一圈小明没有消耗法力值，那么就可以结束循环了。</span><br>    <span class="hljs-keyword">int</span> cnt = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">int</span> sign = <span class="hljs-number">0</span>;<br>    <span class="hljs-comment">//循环开始，因为不知道要循环多少遍，所以中间参数为空</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;  ; i++ )&#123;<br>        <span class="hljs-comment">//如果法力值大于当前格子的法力值</span><br>        <span class="hljs-keyword">if</span>( m &gt;= arr[i])&#123;<br>            m = m - arr[i]; <span class="hljs-comment">//法力值减去当前格子的法力值</span><br>            cnt++;          <span class="hljs-comment">//烙印数+1</span><br>            sign = <span class="hljs-number">1</span>;       <span class="hljs-comment">//本圈消耗了法力值，sign=1</span><br>        &#125;<br>        <span class="hljs-comment">//当i = n - 1，说明一次循环结束，如果sign=1，则需要进行下一轮循环</span><br>        <span class="hljs-comment">//那么就把sign归0，有因为结束时会有i++，所以i=0-1，那么就开启新一轮循环</span><br>        <span class="hljs-keyword">if</span>((i == n - <span class="hljs-number">1</span>) &amp;&amp; (sign == <span class="hljs-number">1</span>))&#123;<br>            sign = <span class="hljs-number">0</span>;<br>            i = <span class="hljs-number">0</span><span class="hljs-number">-1</span>;<br>        &#125;<br>        <span class="hljs-comment">//当i = n - 1，循环结束，sign=0，则不需要继续循环，直接跳出死循环。</span><br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>((i == n - <span class="hljs-number">1</span>) &amp;&amp; (sign == <span class="hljs-number">0</span>))&#123;<br>            <span class="hljs-keyword">break</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-built_in">cout</span> &lt;&lt; cnt &lt;&lt; <span class="hljs-built_in">endl</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+              <h3 id="📋两种内部类用法"><a href="#📋两种内部类用法" class="headerlink" title="📋两种内部类用法"></a>📋两种内部类用法</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Outer</span> </span>&#123;<br>	<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inner</span> </span>&#123;&#125;<br>	<span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StaticInner</span> </span>&#123;&#125;<br>&#125;<br><br>Outer outer = <span class="hljs-keyword">new</span> Outer();<br>Outer.Inner inner = outer.<span class="hljs-function">new <span class="hljs-title">Inner</span><span class="hljs-params">()</span></span>;<br>Outer.StaticInner inner0 = <span class="hljs-keyword">new</span> Outer.StaticInner();<br></code></pre></td></tr></table></figure>
 
+<h3 id="🤔为什么设计内部类"><a href="#🤔为什么设计内部类" class="headerlink" title="🤔为什么设计内部类"></a>🤔为什么设计内部类</h3><p>1 在一个类内部，需要操作某种属性，而这个属性需要涉及的面又很广，我们可以考虑，将这些属性设计为内部类。</p>
+<p>2 好比你设计类 B 的目的只是为了给类 A 使用，那么，我们就可将其设定为内部类，没有必要将类 B 设置成单独的 Java 文件，防止与其他类产生依赖关系。</p>
+<h3 id="🎲解释"><a href="#🎲解释" class="headerlink" title="🎲解释"></a>🎲解释</h3><p>根据Oracle官方的说法：<br>Nested classes are divided into two categories: static and non-static. Nested classes that are declared static are called <em><strong>static nested classes</strong></em>. Non-static nested classes are called <em><strong>inner classes</strong></em>.<br>从字面上看，一个被称为静态嵌套类，一个被称为内部类。</p>
+<p>从字面的角度解释是这样的：</p>
+<p>1 什么是嵌套？嵌套就是我跟你没关系，自己可以完全独立存在，但是我就想借你的壳用一下，来隐藏一下我自己（真TM猥琐）。没有你，我也可以创建实例.</p>
+<p>2 什么是内部？内部就是我是你的一部分，我了解你，我知道你的全部（自由使用外部类的所有变量和方法），没有你就没有我。（所以内部类对象是以外部类对象存在为前提的）</p>
+<h3 id="🎬运用场景"><a href="#🎬运用场景" class="headerlink" title="🎬运用场景"></a>🎬运用场景</h3><p>1 那么，在设计内部类的时候我们就可以做出权衡：如果我内部类与你外部类关系不紧密，耦合程度不高，不需要访问外部类的所有属性或方法，那么我就设计成静态内部类。它可以降低包的深度，方便类的使用和管理类结构，而且，由于静态内部类与外部类并不会保存相互之间的引用，因此在一定程度上，还会节省那么一点内存资源，何乐而不为呢~~</p>
+<p>2 既然上面已经说了什么时候应该用静态内部类，那么如果你的需求不符合静态内部类所提供的一切好处，你就应该考虑使用内部类了。最大的特点就是：你在内部类中需要访问有关外部类的所有属性及方法，我知晓你的一切… … </p>
 <blockquote>
-<p>遇到此类问题，但看了文章还是未解决，<br>评论或加 QQ：781378815</p>
+<p>官网场景用例介绍<br>传送门：<a target="_blank" rel="noopener" href="http://docs.oracle.com/javase/tutorial/java/javaOO/nested.html">http://docs.oracle.com/javase/</a></p>
+</blockquote>
+<blockquote>
+<p>参考<br>链接：<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/28197253/answer/39814613">https://www.zhihu.com/question/28197253/answer/39814613</a></p>
 </blockquote>
 
             </div>
@@ -270,7 +267,7 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
+                      <a class="hover-with-bg" href="/categories/java/">java</a>
                     
                   </div>
                 
@@ -278,9 +275,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/c/">c++</a>
-                    
-                      <a class="hover-with-bg" href="/tags/%E7%AE%97%E6%B3%95/">算法</a>
+                      <a class="hover-with-bg" href="/tags/java/">java</a>
                     
                   </div>
                 
@@ -297,18 +292,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/archives/%E4%B8%BA%E4%BB%80%E4%B9%88JAVA%E5%86%85%E9%83%A8%E7%B1%BB%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%88%90%E9%9D%99%E6%80%81%E5%92%8C%E9%9D%9E%E9%9D%99%E6%80%81/">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">🤔为什么JAVA内部类要设计成静态和非静态</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/archives/%F0%9F%94%91json%E5%88%B0Object%E5%88%B0%E5%85%B7%E4%BD%93%E5%AF%B9%E8%B1%A1/">
-                        <span class="hidden-mobile">🔑json到Object到具体对象</span>
+                      <a href="/archives/%E7%BE%8E%E5%9B%A2%E7%AC%94%E8%AF%95-%E7%A9%BA%E9%97%B4%E5%9B%9E%E5%BB%8A/">
+                        <span class="hidden-mobile">🎯美团笔试-空间回廊</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
