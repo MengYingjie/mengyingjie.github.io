@@ -405,7 +405,7 @@ footer:
 index:
   # 首页 Banner 头图，可以是相对路径或绝对路径，以下相同
   # Path of Banner image, can be a relative path or an absolute path, the same on other pages
-  banner_img: /img/default-3.png
+  banner_img: /img/default-3.jpg
 
   # 头图高度，屏幕百分比
   # Height ratio of banner image
@@ -477,7 +477,7 @@ index:
 # Post Page
 #---------------------------
 post:
-  banner_img: /img/default-10.png
+  banner_img: /img/default-10.jpg
   banner_img_height: 70
   banner_mask_alpha: 0.3
 
@@ -748,7 +748,7 @@ twikoo:
 # Archive Page
 #---------------------------
 archive:
-  banner_img: /img/default-6.png
+  banner_img: /img/default-6.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
@@ -760,7 +760,7 @@ archive:
 #---------------------------
 category:
   enable: true
-  banner_img: /img/default-12.png
+  banner_img: /img/default-12.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
@@ -785,8 +785,7 @@ category:
 #---------------------------
 tag:
   enable: true
-  banner_img: /img/default-11.png
-  banner_img_height: 80
+  banner_img: /img/default-11.jpg
   banner_mask_alpha: 0.3
   subtitle:
   tagcloud:
@@ -838,7 +837,7 @@ page:
 #---------------------------
 page404:
   enable: true
-  banner_img: /img/default-4.png
+  banner_img: /img/default-4.jpg
   banner_img_height: 85
   banner_mask_alpha: 0.3
   subtitle: "Page not found"
@@ -850,7 +849,7 @@ page404:
 #---------------------------
 links:
   enable: true
-  banner_img: /img/default-14.png
+  banner_img: /img/default-14.jpg
   banner_img_height: 60
   banner_mask_alpha: 0.3
   subtitle:
