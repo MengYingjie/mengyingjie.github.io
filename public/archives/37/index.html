@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/myj.png">
-  <link rel="icon" href="/img/myj.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -68,7 +68,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>孟应杰 の 小天地</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -140,18 +140,6 @@
             </li>
           
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/">
-                <i class="iconfont icon-link-fill"></i>
-                友链
-              </a>
-            </li>
-          
-        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
@@ -170,7 +158,7 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default-10.jpg') no-repeat center center;
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -256,7 +244,7 @@
 <h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>x年后，共有多少只小海豚</p>
 <h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><p>5<br>5<br>2<br>2<br>4<br>5</p>
 <h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><p>20</p>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-comment">//n 海豚,海豚寿命m,海豚生宝宝的年份数量p,x年后</span><br>    <span class="hljs-keyword">int</span> n, m, p, x;<br>    <span class="hljs-comment">//n1表示现存的海豚，n2表示一共存在过的海豚包含死去的，由此定义数组大小</span><br>    <span class="hljs-keyword">int</span> n1,n2;<br>    <span class="hljs-comment">//arr2表示海豚来到世上第多少年，死去的海豚为-1，定义足够大来存放</span><br>    <span class="hljs-keyword">int</span> arr2[<span class="hljs-number">99999</span>];<br>    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m &gt;&gt; p;<br>    n1 = n2 = n ;<br>    <span class="hljs-comment">//arr1来存放生孩子的年份</span><br>    <span class="hljs-keyword">int</span> arr1[p];<br>    <span class="hljs-comment">//输入生孩子的年份</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; p; i++)&#123;<br>        <span class="hljs-built_in">cin</span> &gt;&gt; arr1[i];<br>    &#125;<br>    <span class="hljs-built_in">cin</span> &gt;&gt; x;<br>    <span class="hljs-comment">//初始化现在海豚的来到世上的第几年，初始化为1，表示是第一年</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)&#123;<br>        arr2[i] = <span class="hljs-number">1</span>;<br>    &#125;<br>    <span class="hljs-comment">//进入年份循环，循环x次，表示过去x年</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= x; i++)&#123;<br>        <span class="hljs-comment">//每一年循环一边海豚的年份</span><br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; n2; j++)&#123;<br>            <span class="hljs-comment">//如果海豚年份为-1，表示已经去世</span><br>            <span class="hljs-keyword">if</span>(arr2[j] == <span class="hljs-number">-1</span>)<span class="hljs-keyword">continue</span>;<br>            <span class="hljs-comment">//判断词海豚是否在生孩子的年份</span><br>            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> k = <span class="hljs-number">0</span>; k &lt; p; k++)&#123;<br>                <span class="hljs-comment">//如果是</span><br>                <span class="hljs-keyword">if</span>(arr2[j] == arr1[k])&#123;<br>                    n1++;<br>                    n2++;<br>                    arr2[n2<span class="hljs-number">-1</span>] = <span class="hljs-number">0</span>;<br>                &#125;<br>            &#125;<br>            <span class="hljs-comment">//寿命到了，置为-1，因为初始年龄为0，所以年龄等于存在的年份-1.</span><br>            <span class="hljs-keyword">if</span>(arr2[j] - <span class="hljs-number">1</span> == m)&#123;<br>                n1--;<br>                arr2[j] = <span class="hljs-number">-1</span>;<br>            &#125;<br>            arr2[j]++;<br>        &#125;<br>    &#125;<br>    <span class="hljs-built_in">cout</span> &lt;&lt; n1 &lt;&lt; <span class="hljs-built_in">endl</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> ;<br>&#125;<br><br></code></pre></div></td></tr></table></figure>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-comment">//n 海豚,海豚寿命m,海豚生宝宝的年份数量p,x年后</span><br>    <span class="hljs-keyword">int</span> n, m, p, x;<br>    <span class="hljs-comment">//n1表示现存的海豚，n2表示一共存在过的海豚包含死去的，由此定义数组大小</span><br>    <span class="hljs-keyword">int</span> n1,n2;<br>    <span class="hljs-comment">//arr2表示海豚来到世上第多少年，死去的海豚为-1，定义足够大来存放</span><br>    <span class="hljs-keyword">int</span> arr2[<span class="hljs-number">99999</span>];<br>    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m &gt;&gt; p;<br>    n1 = n2 = n ;<br>    <span class="hljs-comment">//arr1来存放生孩子的年份</span><br>    <span class="hljs-keyword">int</span> arr1[p];<br>    <span class="hljs-comment">//输入生孩子的年份</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; p; i++)&#123;<br>        <span class="hljs-built_in">cin</span> &gt;&gt; arr1[i];<br>    &#125;<br>    <span class="hljs-built_in">cin</span> &gt;&gt; x;<br>    <span class="hljs-comment">//初始化现在海豚的来到世上的第几年，初始化为1，表示是第一年</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)&#123;<br>        arr2[i] = <span class="hljs-number">1</span>;<br>    &#125;<br>    <span class="hljs-comment">//进入年份循环，循环x次，表示过去x年</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= x; i++)&#123;<br>        <span class="hljs-comment">//每一年循环一边海豚的年份</span><br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; n2; j++)&#123;<br>            <span class="hljs-comment">//如果海豚年份为-1，表示已经去世</span><br>            <span class="hljs-keyword">if</span>(arr2[j] == <span class="hljs-number">-1</span>)<span class="hljs-keyword">continue</span>;<br>            <span class="hljs-comment">//判断词海豚是否在生孩子的年份</span><br>            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> k = <span class="hljs-number">0</span>; k &lt; p; k++)&#123;<br>                <span class="hljs-comment">//如果是</span><br>                <span class="hljs-keyword">if</span>(arr2[j] == arr1[k])&#123;<br>                    n1++;<br>                    n2++;<br>                    arr2[n2<span class="hljs-number">-1</span>] = <span class="hljs-number">0</span>;<br>                &#125;<br>            &#125;<br>            <span class="hljs-comment">//寿命到了，置为-1，因为初始年龄为0，所以年龄等于存在的年份-1.</span><br>            <span class="hljs-keyword">if</span>(arr2[j] - <span class="hljs-number">1</span> == m)&#123;<br>                n1--;<br>                arr2[j] = <span class="hljs-number">-1</span>;<br>            &#125;<br>            arr2[j]++;<br>        &#125;<br>    &#125;<br>    <span class="hljs-built_in">cout</span> &lt;&lt; n1 &lt;&lt; <span class="hljs-built_in">endl</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> ;<br>&#125;<br><br></code></pre></td></tr></table></figure>
 
 <blockquote>
 <p>遇到此类问题，但看了文章还是未解决，<br>评论或加 QQ：781378815</p>
@@ -321,41 +309,6 @@
             </div>
 
             
-              <!-- Comments -->
-              <article class="comments" id="comments" lazyload>
-                
-                  
-                
-                
-  <script type="text/javascript">
-    Fluid.utils.lazyComments('comments', function() {
-      var light = 'github-light';
-      var dark = 'github-dark';
-      var schema = document.documentElement.getAttribute('data-user-color-scheme');
-      if (schema === 'dark') {
-        schema = dark;
-      } else {
-        schema = light;
-      }
-      window.UtterancesThemeLight = light;
-      window.UtterancesThemeDark = dark;
-      var s = document.createElement('script');
-      s.setAttribute('src', 'https://utteranc.es/client.js');
-      s.setAttribute('repo', 'MengYingjie/commit-utterances');
-      s.setAttribute('issue-term', 'pathname');
-      
-      s.setAttribute('label', 'utterances');
-      
-      s.setAttribute('theme', schema);
-      s.setAttribute('crossorigin', 'anonymous');
-      document.getElementById('comments').appendChild(s);
-    })
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
-
-
-              </article>
-            
           </article>
         </div>
       </div>
@@ -412,7 +365,7 @@
 
   <footer class="text-center mt-5 py-3">
   <div class="footer-content">
-     <i class="iconfont icon-love"></i> 备案号：<a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow noopener"><span>豫ICP备19017804号-3</span></a> <i class="iconfont icon-love"></i> 
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
   </div>
   
 

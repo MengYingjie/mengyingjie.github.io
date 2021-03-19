@@ -7,8 +7,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/myj.png">
-  <link rel="icon" href="/img/myj.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" href="/img/favicon.png">
   <meta name="viewport"
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -68,7 +68,7 @@
     <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand"
-       href="/">&nbsp;<strong>孟应杰 の 小天地</strong>&nbsp;</a>
+       href="/">&nbsp;<strong>Fluid</strong>&nbsp;</a>
 
     <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent"
@@ -140,18 +140,6 @@
             </li>
           
         
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/links/">
-                <i class="iconfont icon-link-fill"></i>
-                友链
-              </a>
-            </li>
-          
-        
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
@@ -170,7 +158,7 @@
 </nav>
 
     <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default-10.jpg') no-repeat center center;
+         style="background: url('/img/default.png') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -254,7 +242,7 @@
 <h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><p>4 21<br>2 1 4 3</p>
 <h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><p>9</p>
 <h4 id="提示"><a href="#提示" class="headerlink" title="提示"></a>提示</h4><p>样例解释：<br>显然是所有房间都留下两个烙印，然后剩下1点法力值，仅能在2号房间再留下一个烙印.</p>
-<h3 id="⌨代码实现"><a href="#⌨代码实现" class="headerlink" title="⌨代码实现"></a>⌨代码实现</h3><figure class="highlight c++"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-comment">//输入房间数量m，小明拥有的法力值n</span><br>    <span class="hljs-keyword">int</span> n, m;<br>    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m;<br>    <span class="hljs-comment">//输入每个房间消耗的法力值</span><br>    <span class="hljs-keyword">int</span> arr[n];<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)&#123;<br>        <span class="hljs-built_in">cin</span> &gt;&gt; arr[i];<br>    &#125;<br>    <span class="hljs-comment">//定义两个变量，cnt用来计数，记录留下的烙印数</span><br>    <span class="hljs-comment">//sign,为设立的标志，当小明在一圈中消耗过法力值，标志位置为1，</span><br>    <span class="hljs-comment">//如果一圈下来sign=0，那么代表这一圈小明没有消耗法力值，那么就可以结束循环了。</span><br>    <span class="hljs-keyword">int</span> cnt = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">int</span> sign = <span class="hljs-number">0</span>;<br>    <span class="hljs-comment">//循环开始，因为不知道要循环多少遍，所以中间参数为空</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;  ; i++ )&#123;<br>        <span class="hljs-comment">//如果法力值大于当前格子的法力值</span><br>        <span class="hljs-keyword">if</span>( m &gt;= arr[i])&#123;<br>            m = m - arr[i]; <span class="hljs-comment">//法力值减去当前格子的法力值</span><br>            cnt++;          <span class="hljs-comment">//烙印数+1</span><br>            sign = <span class="hljs-number">1</span>;       <span class="hljs-comment">//本圈消耗了法力值，sign=1</span><br>        &#125;<br>        <span class="hljs-comment">//当i = n - 1，说明一次循环结束，如果sign=1，则需要进行下一轮循环</span><br>        <span class="hljs-comment">//那么就把sign归0，有因为结束时会有i++，所以i=0-1，那么就开启新一轮循环</span><br>        <span class="hljs-keyword">if</span>((i == n - <span class="hljs-number">1</span>) &amp;&amp; (sign == <span class="hljs-number">1</span>))&#123;<br>            sign = <span class="hljs-number">0</span>;<br>            i = <span class="hljs-number">0</span><span class="hljs-number">-1</span>;<br>        &#125;<br>        <span class="hljs-comment">//当i = n - 1，循环结束，sign=0，则不需要继续循环，直接跳出死循环。</span><br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>((i == n - <span class="hljs-number">1</span>) &amp;&amp; (sign == <span class="hljs-number">0</span>))&#123;<br>            <span class="hljs-keyword">break</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-built_in">cout</span> &lt;&lt; cnt &lt;&lt; <span class="hljs-built_in">endl</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br><br>&#125;<br></code></pre></div></td></tr></table></figure>
+<h3 id="⌨代码实现"><a href="#⌨代码实现" class="headerlink" title="⌨代码实现"></a>⌨代码实现</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>&#123;<br>    <span class="hljs-comment">//输入房间数量m，小明拥有的法力值n</span><br>    <span class="hljs-keyword">int</span> n, m;<br>    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m;<br>    <span class="hljs-comment">//输入每个房间消耗的法力值</span><br>    <span class="hljs-keyword">int</span> arr[n];<br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)&#123;<br>        <span class="hljs-built_in">cin</span> &gt;&gt; arr[i];<br>    &#125;<br>    <span class="hljs-comment">//定义两个变量，cnt用来计数，记录留下的烙印数</span><br>    <span class="hljs-comment">//sign,为设立的标志，当小明在一圈中消耗过法力值，标志位置为1，</span><br>    <span class="hljs-comment">//如果一圈下来sign=0，那么代表这一圈小明没有消耗法力值，那么就可以结束循环了。</span><br>    <span class="hljs-keyword">int</span> cnt = <span class="hljs-number">0</span>;<br>    <span class="hljs-keyword">int</span> sign = <span class="hljs-number">0</span>;<br>    <span class="hljs-comment">//循环开始，因为不知道要循环多少遍，所以中间参数为空</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>;  ; i++ )&#123;<br>        <span class="hljs-comment">//如果法力值大于当前格子的法力值</span><br>        <span class="hljs-keyword">if</span>( m &gt;= arr[i])&#123;<br>            m = m - arr[i]; <span class="hljs-comment">//法力值减去当前格子的法力值</span><br>            cnt++;          <span class="hljs-comment">//烙印数+1</span><br>            sign = <span class="hljs-number">1</span>;       <span class="hljs-comment">//本圈消耗了法力值，sign=1</span><br>        &#125;<br>        <span class="hljs-comment">//当i = n - 1，说明一次循环结束，如果sign=1，则需要进行下一轮循环</span><br>        <span class="hljs-comment">//那么就把sign归0，有因为结束时会有i++，所以i=0-1，那么就开启新一轮循环</span><br>        <span class="hljs-keyword">if</span>((i == n - <span class="hljs-number">1</span>) &amp;&amp; (sign == <span class="hljs-number">1</span>))&#123;<br>            sign = <span class="hljs-number">0</span>;<br>            i = <span class="hljs-number">0</span><span class="hljs-number">-1</span>;<br>        &#125;<br>        <span class="hljs-comment">//当i = n - 1，循环结束，sign=0，则不需要继续循环，直接跳出死循环。</span><br>        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span>((i == n - <span class="hljs-number">1</span>) &amp;&amp; (sign == <span class="hljs-number">0</span>))&#123;<br>            <span class="hljs-keyword">break</span>;<br>        &#125;<br>    &#125;<br>    <span class="hljs-built_in">cout</span> &lt;&lt; cnt &lt;&lt; <span class="hljs-built_in">endl</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;<br><br>&#125;<br></code></pre></td></tr></table></figure>
 
 <blockquote>
 <p>遇到此类问题，但看了文章还是未解决，<br>评论或加 QQ：781378815</p>
@@ -319,41 +307,6 @@
             </div>
 
             
-              <!-- Comments -->
-              <article class="comments" id="comments" lazyload>
-                
-                  
-                
-                
-  <script type="text/javascript">
-    Fluid.utils.lazyComments('comments', function() {
-      var light = 'github-light';
-      var dark = 'github-dark';
-      var schema = document.documentElement.getAttribute('data-user-color-scheme');
-      if (schema === 'dark') {
-        schema = dark;
-      } else {
-        schema = light;
-      }
-      window.UtterancesThemeLight = light;
-      window.UtterancesThemeDark = dark;
-      var s = document.createElement('script');
-      s.setAttribute('src', 'https://utteranc.es/client.js');
-      s.setAttribute('repo', 'MengYingjie/commit-utterances');
-      s.setAttribute('issue-term', 'pathname');
-      
-      s.setAttribute('label', 'utterances');
-      
-      s.setAttribute('theme', schema);
-      s.setAttribute('crossorigin', 'anonymous');
-      document.getElementById('comments').appendChild(s);
-    })
-  </script>
-  <noscript>Please enable JavaScript to view the comments</noscript>
-
-
-              </article>
-            
           </article>
         </div>
       </div>
@@ -410,7 +363,7 @@
 
   <footer class="text-center mt-5 py-3">
   <div class="footer-content">
-     <i class="iconfont icon-love"></i> 备案号：<a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow noopener"><span>豫ICP备19017804号-3</span></a> <i class="iconfont icon-love"></i> 
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
   </div>
   
 
