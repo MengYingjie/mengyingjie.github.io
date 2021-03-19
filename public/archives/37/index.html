@@ -20,7 +20,7 @@
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
   
-  <title>⏰java中的Format时间和时间戳 - 孟应杰の小天地</title>
+  <title>🚄携程校招——携程海洋馆的海豚小宝宝（C++） - 孟应杰の小天地</title>
 
   <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" />
 
@@ -177,7 +177,7 @@
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
           <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="⏰java中的Format时间和时间戳">
+            <span class="h2" id="subtitle" title="🚄携程校招——携程海洋馆的海豚小宝宝（C++）">
               
             </span>
 
@@ -187,8 +187,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2021-03-13 21:50" pubdate>
-        2021年3月13日 晚上
+      <time datetime="2021-03-07 09:50" pubdate>
+        2021年3月7日 上午
       </time>
     </span>
   
@@ -199,7 +199,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      380 字
+      563 字
     </span>
   
 
@@ -209,7 +209,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      5
+      7
        分钟
     </span>
   
@@ -239,15 +239,30 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">⏰java中的Format时间和时间戳</h1>
+            <h1 style="display: none">🚄携程校招——携程海洋馆的海豚小宝宝（C++）</h1>
             
             <div class="markdown-body">
-              <h2 id="🧐format时间和时间戳"><a href="#🧐format时间和时间戳" class="headerlink" title="🧐format时间和时间戳"></a>🧐format时间和时间戳</h2><p>Timestamp就是所谓的时间戳。这个主要用在数据库上，你可以再java.sql这个包内找到这个类。</p>
-<p>一般数据库里如果用Date这个类的话，那你取出来的时候只能到某一天，也就是日，但是Timestamp的话，就是到小时一直到纳秒，很精确的。</p>
-<p>时间戳就是一种类型，只是精度很高，比datetime要精确的多，通常用来防止数据出现脏读现象 。</p>
-<p>时间戳是指格林威治时间1970年01月01日00时00分00秒(北京时间1970年01月01日08时00分00秒)起至现在的总秒数</p>
-<h2 id="🔃java中format时间和时间戳的转换"><a href="#🔃java中format时间和时间戳的转换" class="headerlink" title="🔃java中format时间和时间戳的转换"></a>🔃java中format时间和时间戳的转换</h2><figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-keyword">import</span> java.text.SimpleDateFormat;<br><span class="hljs-keyword">import</span> java.util.Date;<br><br><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@author</span> MengYingjie</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@version</span> 1.0</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@date</span> 2020/10/26 21:33</span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test2</span> </span>&#123;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        Long SystemTimeStamp = System.currentTimeMillis();<br>        System.out.println(<span class="hljs-string">&quot;时间:&quot;</span> + SystemTimeStamp);<br>        String timeFormat = stampToDate(SystemTimeStamp);<br>        System.out.println(<span class="hljs-string">&quot;时间戳转换为时间:&quot;</span> + timeFormat);<br>        Long timeStamp = dateToStamp(timeFormat);<br>        System.out.println(<span class="hljs-string">&quot;时间转换为时间戳:&quot;</span> + timeStamp);<br>    &#125;<br><br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 将时间转换为时间戳</span><br><span class="hljs-comment">     *</span><br><span class="hljs-comment">     * <span class="hljs-doctag">@param</span> timeFormat format 时间格式</span><br><span class="hljs-comment">     * <span class="hljs-doctag">@return</span> 时间戳时间格式</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Long <span class="hljs-title">dateToStamp</span><span class="hljs-params">(String timeFormat)</span> </span>&#123;<br>        SimpleDateFormat sdf = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>);<br>        Long timeStamp = <span class="hljs-keyword">null</span>;<br>        <span class="hljs-keyword">try</span> &#123;<br>            timeStamp = sdf.parse(timeFormat).getTime();<br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            System.out.println(<span class="hljs-string">&quot;传入了null值&quot;</span>);<br>        &#125;<br>        <span class="hljs-keyword">return</span> timeStamp;<br>    &#125;<br><br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 将时间戳转换为时间</span><br><span class="hljs-comment">     *</span><br><span class="hljs-comment">     * <span class="hljs-doctag">@param</span> timeStamp 时间戳时间格式</span><br><span class="hljs-comment">     * <span class="hljs-doctag">@return</span> format 时间格式</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">stampToDate</span><span class="hljs-params">(Long timeStamp)</span> </span>&#123;<br>        SimpleDateFormat format = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>);<br>        String timeFormat = format.format(<span class="hljs-keyword">new</span> Date(timeStamp));<br>        <span class="hljs-keyword">return</span> timeFormat;<br>    &#125;<br>&#125;<br></code></pre></div></td></tr></table></figure>
+              <blockquote>
+<p><a target="_blank" rel="noopener" href="http://www.mengyingjie.com/archives/37/"> ⭐ 文章链接: www.mengyingjie.com/archives/37/ ⭐ </a> </p>
+</blockquote>
+<h2 id="携程海洋馆的海豚小宝宝"><a href="#携程海洋馆的海豚小宝宝" class="headerlink" title="携程海洋馆的海豚小宝宝"></a>携程海洋馆的海豚小宝宝</h2><h3 id="题目描述："><a href="#题目描述：" class="headerlink" title="题目描述："></a>题目描述：</h3><p>携程海洋馆中有 n 只萌萌的小海豚，初始均为 0 岁，每只小海豚的寿命是 m 岁，</p>
+<p>且这些小海豚会在 birthYear[i] 这些年份生产出一位宝宝海豚（1 &lt;= birthYear[i] &lt;= m），每位宝宝海豚刚出生为 0 岁。</p>
+<p>问 x 年时，携程海洋馆有多少只小海豚？</p>
+<h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>n（初始海豚数）</p>
+<p>m（海豚寿命）</p>
+<p>海豚生宝宝的年份数量(假设为p)</p>
+<p>海豚生宝宝的年份1</p>
+<p>…</p>
+<p>海豚生宝宝的年份p</p>
+<p>x（几年后）</p>
+<h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>x年后，共有多少只小海豚</p>
+<h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><p>5<br>5<br>2<br>2<br>4<br>5</p>
+<h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><p>20</p>
+<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><figure class="highlight cpp"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs cpp"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;iostream&gt;</span></span><br><span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;<br><br><br><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span><br><span class="hljs-function"></span>&#123;<br>    <span class="hljs-comment">//n 海豚,海豚寿命m,海豚生宝宝的年份数量p,x年后</span><br>    <span class="hljs-keyword">int</span> n, m, p, x;<br>    <span class="hljs-comment">//n1表示现存的海豚，n2表示一共存在过的海豚包含死去的，由此定义数组大小</span><br>    <span class="hljs-keyword">int</span> n1,n2;<br>    <span class="hljs-comment">//arr2表示海豚来到世上第多少年，死去的海豚为-1，定义足够大来存放</span><br>    <span class="hljs-keyword">int</span> arr2[<span class="hljs-number">99999</span>];<br>    <span class="hljs-built_in">cin</span> &gt;&gt; n &gt;&gt; m &gt;&gt; p;<br>    n1 = n2 = n ;<br>    <span class="hljs-comment">//arr1来存放生孩子的年份</span><br>    <span class="hljs-keyword">int</span> arr1[p];<br>    <span class="hljs-comment">//输入生孩子的年份</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; p; i++)&#123;<br>        <span class="hljs-built_in">cin</span> &gt;&gt; arr1[i];<br>    &#125;<br>    <span class="hljs-built_in">cin</span> &gt;&gt; x;<br>    <span class="hljs-comment">//初始化现在海豚的来到世上的第几年，初始化为1，表示是第一年</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; n; i++)&#123;<br>        arr2[i] = <span class="hljs-number">1</span>;<br>    &#125;<br>    <span class="hljs-comment">//进入年份循环，循环x次，表示过去x年</span><br>    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt;= x; i++)&#123;<br>        <span class="hljs-comment">//每一年循环一边海豚的年份</span><br>        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; n2; j++)&#123;<br>            <span class="hljs-comment">//如果海豚年份为-1，表示已经去世</span><br>            <span class="hljs-keyword">if</span>(arr2[j] == <span class="hljs-number">-1</span>)<span class="hljs-keyword">continue</span>;<br>            <span class="hljs-comment">//判断词海豚是否在生孩子的年份</span><br>            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> k = <span class="hljs-number">0</span>; k &lt; p; k++)&#123;<br>                <span class="hljs-comment">//如果是</span><br>                <span class="hljs-keyword">if</span>(arr2[j] == arr1[k])&#123;<br>                    n1++;<br>                    n2++;<br>                    arr2[n2<span class="hljs-number">-1</span>] = <span class="hljs-number">0</span>;<br>                &#125;<br>            &#125;<br>            <span class="hljs-comment">//寿命到了，置为-1，因为初始年龄为0，所以年龄等于存在的年份-1.</span><br>            <span class="hljs-keyword">if</span>(arr2[j] - <span class="hljs-number">1</span> == m)&#123;<br>                n1--;<br>                arr2[j] = <span class="hljs-number">-1</span>;<br>            &#125;<br>            arr2[j]++;<br>        &#125;<br>    &#125;<br>    <span class="hljs-built_in">cout</span> &lt;&lt; n1 &lt;&lt; <span class="hljs-built_in">endl</span>;<br>    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span> ;<br>&#125;<br><br></code></pre></div></td></tr></table></figure>
 
+<blockquote>
+<p>遇到此类问题，但看了文章还是未解决，<br>评论或加 QQ：781378815</p>
+</blockquote>
 
             </div>
             <hr>
@@ -257,9 +272,9 @@
                   <div class="post-meta mr-3">
                     <i class="iconfont icon-category"></i>
                     
-                      <a class="hover-with-bg" href="/categories/java/">java</a>
+                      <a class="hover-with-bg" href="/categories/%E6%8B%9B%E8%81%98/">招聘</a>
                     
-                      <a class="hover-with-bg" href="/categories/java/%E6%8A%80%E5%B7%A7/">技巧</a>
+                      <a class="hover-with-bg" href="/categories/%E6%8B%9B%E8%81%98/%E7%AC%94%E8%AF%95/">笔试</a>
                     
                   </div>
                 
@@ -267,7 +282,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/java/">java</a>
+                      <a class="hover-with-bg" href="/tags/%E6%8B%9B%E8%81%98/">招聘</a>
                     
                   </div>
                 
@@ -284,12 +299,18 @@
                   <article class="post-prev col-6">
                     
                     
+                      <a href="/archives/java%E4%B8%AD%E7%9A%84Format%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%B6%E9%97%B4%E6%88%B3/">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">⏰java中的Format时间和时间戳</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/archives/37/">
-                        <span class="hidden-mobile">🚄携程校招——携程海洋馆的海豚小宝宝（C++）</span>
+                      <a href="/archives/%E4%B8%BA%E4%BB%80%E4%B9%88JAVA%E5%86%85%E9%83%A8%E7%B1%BB%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%88%90%E9%9D%99%E6%80%81%E5%92%8C%E9%9D%9E%E9%9D%99%E6%80%81/">
+                        <span class="hidden-mobile">🤔为什么JAVA内部类要设计成静态和非静态</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
