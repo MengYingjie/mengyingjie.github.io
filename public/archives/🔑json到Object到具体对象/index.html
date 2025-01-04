@@ -24,7 +24,7 @@
 <meta property="og:description" content="🏡环境SpringBoot + lombok 📋遇到需求大概意思 给出一个参数通过URI接收一个对象test（可能是两种类的对象）和一个type（判断test类型） 🌌假设：如果type为0，test为TestTest对象， 如果type为1，test为TestTest2对象 🔬实现过程：TestTest.class和TestTest2.class 12345678910111213141">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-02T01:39:50.000Z">
-<meta property="article:modified_time" content="2021-03-06T12:55:08.000Z">
+<meta property="article:modified_time" content="2025-01-04T20:31:31.814Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="java">
 <meta property="article:tag" content="spring">
@@ -209,7 +209,7 @@
   
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      undefined 字
+      1.3k 字
     </span>
   
 
@@ -218,7 +218,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      NaN 分钟
+      4 分钟
     </span>
   
 
@@ -261,8 +261,9 @@
 <p>Controler</p>
 <figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-meta">@RestController</span><br><span class="hljs-meta">@RequestMapping(&quot;/api/v1&quot;)</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestController</span> </span>&#123;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Logger log = LoggerFactory.getLogger(TestController.class);<br><br>    <span class="hljs-meta">@PostMapping(&quot;/hello&quot;)</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">helloWorld</span><span class="hljs-params">(String type,</span></span><br><span class="hljs-function"><span class="hljs-params">                             <span class="hljs-meta">@RequestBody</span> Object test)</span> <span class="hljs-keyword">throws</span> IOException </span>&#123;<br>        <br>        log.info(<span class="hljs-string">&quot;test &#123;&#125;&quot;</span>, test.toString());<br>        <span class="hljs-keyword">if</span> (type.equals(<span class="hljs-string">&quot;0&quot;</span>)) &#123;<br>            TestTest testTest = <span class="hljs-keyword">new</span> TestTest();<br>            ObjectMapper objectMapper = <span class="hljs-keyword">new</span> ObjectMapper();<br>            String testString = objectMapper.writeValueAsString(test);<br>            testTest = objectMapper.readValue(testString, TestTest.class);<br>            <span class="hljs-keyword">return</span> testTest.toString();<br>        &#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type.equals(<span class="hljs-string">&quot;1&quot;</span>))&#123;<br>            TestTest2 testTest2 = <span class="hljs-keyword">new</span> TestTest2();<br>            ObjectMapper objectMapper = <span class="hljs-keyword">new</span> ObjectMapper();<br>            String testString = objectMapper.writeValueAsString(test);<br>            testTest2 = objectMapper.readValue(testString, TestTest2.class);<br>            <span class="hljs-keyword">return</span> testTest2toString();<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;error&quot;</span>;<br>    &#125;<br>&#125;<br></code></pre></div></td></tr></table></figure>
 
-
-
+<blockquote>
+<p>遇到此类问题，但看了文章还是未解决<br>评论或加 QQ：781378815</p>
+</blockquote>
 
             </div>
             <hr>
