@@ -1,0 +1,173 @@
+{
+  "main": {
+    "id": "27010a48ab86d544",
+    "type": "split",
+    "children": [
+      {
+        "id": "d65ca0ac1cde3273",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fe5a99e01d31c095",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "面具的使用技巧.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "70ef0b36c7a09d5c",
+    "type": "split",
+    "children": [
+      {
+        "id": "8a6125d7cb19cdb3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a755bb5034650641",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "22385a040b0f74ee",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "39897db01b87dd3e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "91af71870035cbdc",
+    "type": "split",
+    "children": [
+      {
+        "id": "b452839f76aaaafe",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d2a43590cd74e0a1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "面具的使用技巧.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "da43fdde51afaf41",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "面具的使用技巧.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1bcb23f249c3d5f6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f78d0b57542d3a5b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "面具的使用技巧.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "fe5a99e01d31c095",
+  "lastOpenFiles": [
+    "美团笔试-空间回廊.md",
+    "面具的使用技巧.md",
+    "面具的使用技巧/d8c30fb32cfaf40eed9a2591525beedc_MD5.png",
+    "面具的使用技巧/b7deb45977cb823eec3fc164f62a5866_MD5.png",
+    "面具的使用技巧/910ba56bc046516ca2eca596131ff90e_MD5.png",
+    "面具的使用技巧/785aec667de7b8ddc47745f30372f7b0_MD5.png",
+    "面具的使用技巧/2c570ef6ed5d5c7cad6e9ba5327a3e56_MD5.png",
+    "面具的使用技巧/1a70270c8c5728677ee3763b55c99bc1_MD5.png",
+    "面具的使用技巧/18a97818680096f1f60c954cb6f386dd_MD5.png",
+    "面具的使用技巧/1182f70ca6531857175a276bf1b4f2bb_MD5.png",
+    "面具的使用技巧",
+    "🔑json到Object到具体对象.md",
+    "37.md",
+    "37-2.md",
+    "39.md",
+    "为什么JAVA内部类要设计成静态和非静态.md",
+    "images/d8c30fb32cfaf40eed9a2591525beedc_MD5.png",
+    "images/b7deb45977cb823eec3fc164f62a5866_MD5.png",
+    "images",
+    "🎭面具的使用技巧（生产力工具）",
+    "images/785aec667de7b8ddc47745f30372f7b0_MD5.png.md"
+  ]
+}

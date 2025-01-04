@@ -7,55 +7,84 @@
 
 <head>
   <meta charset="UTF-8">
+
   <link rel="apple-touch-icon" sizes="76x76" href="/img/myj.png">
   <link rel="icon" href="/img/myj.png">
+  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   
   <meta name="theme-color" content="#2f4154">
-  <meta name="description" content="">
-  <meta name="author" content="John Doe">
+  <meta name="author" content="孟应杰">
   <meta name="keywords" content="">
-  <meta property="og:type" content="website">
+  
+    <meta property="og:type" content="website">
 <meta property="og:title" content="孟应杰的小酒馆">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="孟应杰的小酒馆">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="John Doe">
+<meta property="article:author" content="孟应杰">
 <meta name="twitter:card" content="summary_large_image">
+  
+  
   
   <title>孟应杰的小酒馆</title>
 
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" />
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
+
+
 
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
 
 
 
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
 
 
 <link  rel="stylesheet" href="/css/main.css" />
 
-<!-- 自定义样式保持在最底部 -->
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
 
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.8.12","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname"}},"search_path":"/local-search.xml"};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
+  
+
+
+  
 <meta name="generator" content="Hexo 5.4.0"></head>
 
 
 <body>
-  <header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 100vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
       <strong>孟应杰的小酒馆</strong>
@@ -76,9 +105,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/">
+              <a class="nav-link" href="/" target="_self">
                 <i class="iconfont icon-home-fill"></i>
-                大堂(首页)
+                <span>大堂(首页)</span>
               </a>
             </li>
           
@@ -88,9 +117,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/archives/">
+              <a class="nav-link" href="/archives/" target="_self">
                 <i class="iconfont icon-archive-fill"></i>
-                柜台(归档)
+                <span>柜台(归档)</span>
               </a>
             </li>
           
@@ -100,9 +129,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/categories/">
+              <a class="nav-link" href="/categories/" target="_self">
                 <i class="iconfont icon-category-fill"></i>
-                酒窖(分类)
+                <span>酒窖(分类)</span>
               </a>
             </li>
           
@@ -112,9 +141,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/tags/">
+              <a class="nav-link" href="/tags/" target="_self">
                 <i class="iconfont icon-tags-fill"></i>
-                客房(标签)
+                <span>客房(标签)</span>
               </a>
             </li>
           
@@ -124,9 +153,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/about/">
+              <a class="nav-link" href="/about/" target="_self">
                 <i class="iconfont icon-user-fill"></i>
-                掌柜(关于)
+                <span>掌柜(关于)</span>
               </a>
             </li>
           
@@ -136,9 +165,9 @@
           
           
             <li class="nav-item">
-              <a class="nav-link" href="/links/">
+              <a class="nav-link" href="/links/" target="_self">
                 <i class="iconfont icon-link-fill"></i>
-                太平无事(链接)
+                <span>太平无事(友链)</span>
               </a>
             </li>
           
@@ -146,14 +175,16 @@
         
           <li class="nav-item" id="search-btn">
             <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              &nbsp;<i class="iconfont icon-search"></i>&nbsp;
+              <i class="iconfont icon-search"></i>
             </a>
           </li>
+          
         
         
           <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">&nbsp;<i
-                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
           </li>
         
       </ul>
@@ -161,34 +192,40 @@
   </div>
 </nav>
 
-    <div class="banner" id="banner" parallax=true
-         style="background: url('/img/default-3.jpg') no-repeat center center;
-           background-size: cover;">
-      <div class="full-bg-img">
-        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-          <div class="page-header text-center fade-in-up">
-            <span class="h2" id="subtitle" title="欢迎来到我的小酒馆！">
-              
-            </span>
+  
 
-            
-          </div>
-
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/default-3.jpg') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
           
-            <div class="scroll-down-bar">
-              <i class="iconfont icon-arrowdown"></i>
-            </div>
+            <span id="subtitle" data-typed-text="欢迎来到我的小酒馆！"></span>
           
         </div>
+
+        
       </div>
+
+      
+        <div class="scroll-down-bar">
+          <i class="iconfont icon-arrowdown"></i>
+        </div>
+      
     </div>
+  </div>
+</div>
+
+</div>
+
   </header>
 
   <main>
     
       <div class="container nopadding-x-md">
-        <div class="py-5" id="board"
-          style=margin-top:0>
+        <div id="board"
+          style="margin-top: 0">
           
           <div class="container">
             <div class="row">
@@ -200,23 +237,19 @@
     
     
     <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
-        <a href="/archives/test111/" target="_self">
-          test111
+        <a href="/archives/%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" target="_self">
+          🎭面具的使用技巧
         </a>
-      </h1>
+      </h2>
 
-      <p class="index-excerpt">
-        <a href="/archives/test111/" target="_self">
-          
-          
-            
-          
-          你好测试第二次 开始着tste
-
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/archives/%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" target="_self">
+        <div>
+          面具示例汇总方便第二次阅读使用，第一次阅读可以先看下面具制作过程。           输出 输出 实现路径指南 面具示例   HLD需求分析 LLD第一章  HLD需求分析 -&gt; LLD第一章   API接口描述 TP用例  API描述 -&gt; TP用例   伪代码 代码 ChatGPT辅助软件开发提效操作指南 伪代码 -&gt; 代码   TP Python脚本 ChatGPT辅助软
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -228,6 +261,36 @@
           </div>
         
         
+          <div class="post-meta mr-3 d-flex align-items-center">
+            <i class="iconfont icon-category"></i>
+            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/AIGC/" class="category-chain-item">AIGC</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+          </div>
+        
+        
+          <div class="post-meta">
+            <i class="iconfont icon-tags"></i>
+            
+              <a href="/tags/ChatGPT/">#ChatGPT</a>
+            
+              <a href="/tags/AI/">#AI</a>
+            
+          </div>
         
       </div>
     </article>
@@ -237,30 +300,19 @@
     
     
     <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/archives/39/" target="_self">
           🚥360校招——最后赢家（C++）
         </a>
-      </h1>
+      </h2>
 
-      <p class="index-excerpt">
-        <a href="/archives/39/" target="_self">
-          
-          
-            
-          
-          
- ⭐ 文章链接: myj.im/archives/39/ ⭐  
-
-
-时间限制：C/C++语言 1000MS；其他语言 3000MS内存限制：C/C++语言 65536KB；其他语言 589824KB
-
-题目描述：最强的不一定是最后的赢家。
-某赛事有n名选手参加，但是不同于其他的比赛，本比赛采取的是擂台赛的形式，n名选手排成一排，每次队伍的第一位和第二位选手进行比赛，输的一方会排到队尾。
-当某位
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/archives/39/" target="_self">
+        <div>
+          ⭐ 文章链接: myj.im/archives/39/ ⭐     时间限制：C/C++语言 1000MS；其他语言 3000MS内存限制：C/C++语言 65536KB；其他语言 589824KB  题目描述：最强的不一定是最后的赢家。 某赛事有n名选手参加，但是不同于其他的比赛，本比赛采取的是擂台赛的形式，n名选手排成一排，每次队伍的第一位和第二位选手进行比赛，输的一方会排到队尾。 当某位
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -272,22 +324,41 @@
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%8B%9B%E8%81%98/">招聘</a>
-            
-              <a href="/categories/%E6%8B%9B%E8%81%98/%E7%AC%94%E8%AF%95/">笔试</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8B%9B%E8%81%98/" class="category-chain-item">招聘</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8B%9B%E8%81%98/%E7%AC%94%E8%AF%95/" class="category-chain-item">笔试</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/c/">c++</a>
+              <a href="/tags/c/">#c++</a>
             
-              <a href="/tags/%E7%AE%97%E6%B3%95/">算法</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/">#算法</a>
             
           </div>
         
@@ -299,29 +370,19 @@
     
     
     <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/archives/37/" target="_self">
           🚄携程校招——携程海洋馆的海豚小宝宝（C++）
         </a>
-      </h1>
+      </h2>
 
-      <p class="index-excerpt">
-        <a href="/archives/37/" target="_self">
-          
-          
-            
-          
-          
- ⭐ 文章链接: myj.im/archives/37/⭐  
-
-题目描述：携程海洋馆中有 n 只萌萌的小海豚，初始均为 0 岁，每只小海豚的寿命是 m 岁，
-且这些小海豚会在 birthYear[i] 这些年份生产出一位宝宝海豚（1 &lt;= birthYear[i] &lt;= m），每位宝宝海豚刚出生为 0 岁。
-问 x 年时，携程海洋馆有多少只小海豚？
-输入n（初始海豚数）
-m（海豚寿
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/archives/37/" target="_self">
+        <div>
+          ⭐ 文章链接: myj.im/archives/37/⭐    题目描述：携程海洋馆中有 n 只萌萌的小海豚，初始均为 0 岁，每只小海豚的寿命是 m 岁， 且这些小海豚会在 birthYear[i] 这些年份生产出一位宝宝海豚（1 &lt;= birthYear[i] &lt;= m），每位宝宝海豚刚出生为 0 岁。 问 x 年时，携程海洋馆有多少只小海豚？ 输入n（初始海豚数） m（海豚寿
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -333,22 +394,41 @@ m（海豚寿
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%8B%9B%E8%81%98/">招聘</a>
-            
-              <a href="/categories/%E6%8B%9B%E8%81%98/%E7%AC%94%E8%AF%95/">笔试</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8B%9B%E8%81%98/" class="category-chain-item">招聘</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8B%9B%E8%81%98/%E7%AC%94%E8%AF%95/" class="category-chain-item">笔试</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/c/">c++</a>
+              <a href="/tags/c/">#c++</a>
             
-              <a href="/tags/%E7%AE%97%E6%B3%95/">算法</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/">#算法</a>
             
           </div>
         
@@ -360,85 +440,19 @@ m（海豚寿
     
     
     <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/archives/37-2/" target="_self">
-          22222🚄携程校招——携程海洋馆的海豚小宝宝（C++）
-        </a>
-      </h1>
-
-      <p class="index-excerpt">
-        <a href="/archives/37-2/" target="_self">
-          
-          
-            
-          
-          
- ⭐ 文章链接: myj.im/archives/37/⭐  
-
-题目描述：22222222携程海洋馆中有 n 只萌萌的小海豚，初始均为 0 岁，每只小海豚的寿命是 m 岁，
-且这些小海豚会在 birthYear[i] 这些年份生产出一位宝宝海豚（1 &lt;= birthYear[i] &lt;= m），每位宝宝海豚刚出生为 0 岁。
-问 x 年时，携程海洋馆有多少只小海豚？
-输入n（初始海豚
-        </a>
-      </p>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2021-03-20 01:42" pubdate>
-              2021-03-20
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-category"></i>
-            
-              <a href="/categories/%E6%8B%9B%E8%81%98/">招聘</a>
-            
-              <a href="/categories/%E6%8B%9B%E8%81%98/%E7%AC%94%E8%AF%95/">笔试</a>
-            
-          </div>
-        
-        
-          <div class="post-meta">
-            <i class="iconfont icon-tags"></i>
-            
-              <a href="/tags/c/">c++</a>
-            
-              <a href="/tags/%E7%AE%97%E6%B3%95/">算法</a>
-            
-          </div>
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/archives/java%E4%B8%AD%E7%9A%84Format%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%B6%E9%97%B4%E6%88%B3/" target="_self">
           ⏰java中的Format时间和时间戳
         </a>
-      </h1>
+      </h2>
 
-      <p class="index-excerpt">
-        <a href="/archives/java%E4%B8%AD%E7%9A%84Format%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%B6%E9%97%B4%E6%88%B3/" target="_self">
-          
-          
-            
-          
-          🧐format时间和时间戳Timestamp就是所谓的时间戳。这个主要用在数据库上，你可以再java.sql这个包内找到这个类。
-一般数据库里如果用Date这个类的话，那你取出来的时候只能到某一天，也就是日，但是Timestamp的话，就是到小时一直到纳秒，很精确的。
-时间戳就是一种类型，只是精度很高，比datetime要精确的多，通常用来防止数据出现脏读现象 。
-时间戳是指格林威治时间1970
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/archives/java%E4%B8%AD%E7%9A%84Format%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%B6%E9%97%B4%E6%88%B3/" target="_self">
+        <div>
+          🧐format时间和时间戳Timestamp就是所谓的时间戳。这个主要用在数据库上，你可以再java.sql这个包内找到这个类。 一般数据库里如果用Date这个类的话，那你取出来的时候只能到某一天，也就是日，但是Timestamp的话，就是到小时一直到纳秒，很精确的。 时间戳就是一种类型，只是精度很高，比datetime要精确的多，通常用来防止数据出现脏读现象 。 时间戳是指格林威治时间1970
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -450,20 +464,39 @@ m（海豚寿
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/java/">java</a>
-            
-              <a href="/categories/java/%E6%8A%80%E5%B7%A7/">技巧</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/java/" class="category-chain-item">java</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/java/%E6%8A%80%E5%B7%A7/" class="category-chain-item">技巧</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/java/">java</a>
+              <a href="/tags/java/">#java</a>
             
           </div>
         
@@ -475,22 +508,19 @@ m（海豚寿
     
     
     <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/archives/%E4%B8%BA%E4%BB%80%E4%B9%88JAVA%E5%86%85%E9%83%A8%E7%B1%BB%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%88%90%E9%9D%99%E6%80%81%E5%92%8C%E9%9D%9E%E9%9D%99%E6%80%81/" target="_self">
           🤔为什么JAVA内部类要设计成静态和非静态
         </a>
-      </h1>
+      </h2>
 
-      <p class="index-excerpt">
-        <a href="/archives/%E4%B8%BA%E4%BB%80%E4%B9%88JAVA%E5%86%85%E9%83%A8%E7%B1%BB%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%88%90%E9%9D%99%E6%80%81%E5%92%8C%E9%9D%9E%E9%9D%99%E6%80%81/" target="_self">
-          
-          
-            
-          
-          📋两种内部类用法12345678static class Outer &#123;	class Inner &#123;&#125;	static class StaticInner &#123;&#125;&#125;Outer outer = new Outer();Outer.Inner inner = outer.new Inner();Outer.StaticInner inner0 
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/archives/%E4%B8%BA%E4%BB%80%E4%B9%88JAVA%E5%86%85%E9%83%A8%E7%B1%BB%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%88%90%E9%9D%99%E6%80%81%E5%92%8C%E9%9D%9E%E9%9D%99%E6%80%81/" target="_self">
+        <div>
+          📋两种内部类用法12345678static class Outer &#123;	class Inner &#123;&#125;	static class StaticInner &#123;&#125;&#125;Outer outer = new Outer();Outer.Inner inner = outer.new Inner();Outer.StaticInner inner0
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -502,20 +532,39 @@ m（海豚寿
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/java/">java</a>
-            
-              <a href="/categories/java/%E6%8A%80%E5%B7%A7/">技巧</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/java/" class="category-chain-item">java</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/java/%E6%8A%80%E5%B7%A7/" class="category-chain-item">技巧</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/java/">java</a>
+              <a href="/tags/java/">#java</a>
             
           </div>
         
@@ -527,28 +576,19 @@ m（海豚寿
     
     
     <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/archives/%E7%BE%8E%E5%9B%A2%E7%AC%94%E8%AF%95-%E7%A9%BA%E9%97%B4%E5%9B%9E%E5%BB%8A/" target="_self">
           🎯美团笔试-空间回廊
         </a>
-      </h1>
+      </h2>
 
-      <p class="index-excerpt">
-        <a href="/archives/%E7%BE%8E%E5%9B%A2%E7%AC%94%E8%AF%95-%E7%A9%BA%E9%97%B4%E5%9B%9E%E5%BB%8A/" target="_self">
-          
-          
-            
-          
-          
-⭐ 孟应杰的网站: myj.im ⭐
-
-📌题目描述：有一款叫做空间回廊的游戏，游戏中有着n个房间依次相连，如图，1号房间可以走到2号房间，以此类推，n号房间可以走到1号房间。
-这个游戏的最终目的是为了在这些房间中留下尽可能多的烙印，在每个房间里留下烙印所花费的法力值是不相同的，已知他共有m点法力值，这些法力是不可恢复的。
-
-小明刚接触这款游戏，所以只会耿直的玩，所以他的每一个行动都是可以预料的
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/archives/%E7%BE%8E%E5%9B%A2%E7%AC%94%E8%AF%95-%E7%A9%BA%E9%97%B4%E5%9B%9E%E5%BB%8A/" target="_self">
+        <div>
+          ⭐ 孟应杰的网站: myj.im ⭐  📌题目描述：有一款叫做空间回廊的游戏，游戏中有着n个房间依次相连，如图，1号房间可以走到2号房间，以此类推，n号房间可以走到1号房间。 这个游戏的最终目的是为了在这些房间中留下尽可能多的烙印，在每个房间里留下烙印所花费的法力值是不相同的，已知他共有m点法力值，这些法力是不可恢复的。  小明刚接触这款游戏，所以只会耿直的玩，所以他的每一个行动都是可以预料的
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -560,22 +600,41 @@ m（海豚寿
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/%E6%8B%9B%E8%81%98/">招聘</a>
-            
-              <a href="/categories/%E6%8B%9B%E8%81%98/%E7%AC%94%E8%AF%95/">笔试</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8B%9B%E8%81%98/" class="category-chain-item">招聘</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8B%9B%E8%81%98/%E7%AC%94%E8%AF%95/" class="category-chain-item">笔试</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/c/">c++</a>
+              <a href="/tags/c/">#c++</a>
             
-              <a href="/tags/%E7%AE%97%E6%B3%95/">算法</a>
+              <a href="/tags/%E7%AE%97%E6%B3%95/">#算法</a>
             
           </div>
         
@@ -587,28 +646,19 @@ m（海豚寿
     
     
     <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
+      <h2 class="index-header">
         
         <a href="/archives/%F0%9F%94%91json%E5%88%B0Object%E5%88%B0%E5%85%B7%E4%BD%93%E5%AF%B9%E8%B1%A1/" target="_self">
           🔑json到Object到具体对象
         </a>
-      </h1>
+      </h2>
 
-      <p class="index-excerpt">
-        <a href="/archives/%F0%9F%94%91json%E5%88%B0Object%E5%88%B0%E5%85%B7%E4%BD%93%E5%AF%B9%E8%B1%A1/" target="_self">
-          
-          
-            
-          
-          🏡环境SpringBoot + lombok
-📋遇到需求大概意思
-给出一个参数通过URI接收一个对象test（可能是两种类的对象）和一个type（判断test类型）
-🌌假设：如果type为0，test为TestTest对象，
-如果type为1，test为TestTest2对象
-🔬实现过程：TestTest.class和TestTest2.class
-12345678910111213141
-        </a>
-      </p>
+      
+      <a class="index-excerpt index-excerpt__noimg" href="/archives/%F0%9F%94%91json%E5%88%B0Object%E5%88%B0%E5%85%B7%E4%BD%93%E5%AF%B9%E8%B1%A1/" target="_self">
+        <div>
+          🏡环境SpringBoot + lombok 📋遇到需求大概意思 给出一个参数通过URI接收一个对象test（可能是两种类的对象）和一个type（判断test类型） 🌌假设：如果type为0，test为TestTest对象， 如果type为1，test为TestTest2对象 🔬实现过程：TestTest.class和TestTest2.class 12345678910111213141
+        </div>
+      </a>
 
       <div class="index-btm post-metas">
         
@@ -620,22 +670,41 @@ m（海豚寿
           </div>
         
         
-          <div class="post-meta mr-3">
+          <div class="post-meta mr-3 d-flex align-items-center">
             <i class="iconfont icon-category"></i>
             
-              <a href="/categories/java/">java</a>
-            
-              <a href="/categories/java/spring/">spring</a>
-            
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/java/" class="category-chain-item">java</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/java/spring/" class="category-chain-item">spring</a>
+  
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
           </div>
         
         
           <div class="post-meta">
             <i class="iconfont icon-tags"></i>
             
-              <a href="/tags/java/">java</a>
+              <a href="/tags/java/">#java</a>
             
-              <a href="/tags/spring/">spring</a>
+              <a href="/tags/spring/">#spring</a>
             
           </div>
         
@@ -674,35 +743,36 @@ m（海豚寿
       <div class="modal-body mx-3">
         <div class="md-form mb-5">
           <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v"
-                 for="local-search-input">关键词</label>
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
         </div>
         <div class="list-group" id="local-search-result"></div>
       </div>
     </div>
   </div>
 </div>
+
     
 
     
   </main>
 
-  <footer class="text-center mt-5 py-3">
-  <div class="footer-content">
-     <i class="iconfont icon-love"></i> 备案号：<a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow noopener"><span>豫ICP备19017804号-3</span></a> <i class="iconfont icon-love"></i> 
-  </div>
+  <footer>
+    <div class="footer-inner">
   
-
+    <div class="footer-content">
+       <i class="iconfont icon-love"></i> 备案号：<a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow noopener"><span>豫ICP备19017804号-3</span></a> <i class="iconfont icon-love"></i> 
+    </div>
   
-
   
-</footer>
-
-
-  <!-- SCRIPTS -->
   
-  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
 
   <script>
     NProgress.configure({"showSpinner":false,"trickleSpeed":100})
@@ -713,15 +783,27 @@ m（海豚寿
   </script>
 
 
-<script  src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" ></script>
-<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" ></script>
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
 <script  src="/js/events.js" ></script>
 <script  src="/js/plugins.js" ></script>
 
-<!-- Plugins -->
 
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
+      }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
 
-  <script  src="/js/local-search.js" ></script>
 
 
 
@@ -731,43 +813,22 @@ m（海豚寿
 
 
 
-  
+
+  <script  src="/js/local-search.js" ></script>
 
 
 
 
 
-
-
-
-  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2/lib/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var title = document.getElementById('subtitle').title;
-      
-      typing(title)
-      
-    })(window, document);
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- 主题的启动项 保持在最底部 -->
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
 <script  src="/js/boot.js" ></script>
 
 
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
 </body>
 </html>
