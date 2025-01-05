@@ -19,23 +19,22 @@
   <meta name="author" content="孟应杰">
   <meta name="keywords" content="">
   
-    <meta name="description" content="🏡环境SpringBoot + lombok 📋遇到需求大概意思 给出一个参数通过URI接收一个对象test（可能是两种类的对象）和一个type（判断test类型） 🌌假设：如果type为0，test为TestTest对象， 如果type为1，test为TestTest2对象 🔬实现过程：TestTest.class和TestTest2.class 12345678910111213141">
+    <meta name="description" content="⭐ 孟应杰的网站: myj.im ⭐  🧐format时间和时间戳Timestamp就是所谓的时间戳。这个主要用在数据库上，你可以再java.sql这个包内找到这个类。 一般数据库里如果用Date这个类的话，那你取出来的时候只能到某一天，也就是日，但是Timestamp的话，就是到小时一直到纳秒，很精确的。 时间戳就是一种类型，只是精度很高，比datetime要精确的多，通常用来防止数据出现脏">
 <meta property="og:type" content="article">
-<meta property="og:title" content="🔑json到Object到具体对象">
-<meta property="og:url" content="https://myj.im/archives/%F0%9F%94%91json%E5%88%B0Object%E5%88%B0%E5%85%B7%E4%BD%93%E5%AF%B9%E8%B1%A1/index.html">
+<meta property="og:title" content="⏰java中的Format时间和时间戳">
+<meta property="og:url" content="https://myj.im/archives/42-java%E4%B8%AD%E7%9A%84Format%E6%97%B6%E9%97%B4%E5%92%8C%E6%97%B6%E9%97%B4%E6%88%B3/index.html">
 <meta property="og:site_name" content="孟应杰的小酒馆">
-<meta property="og:description" content="🏡环境SpringBoot + lombok 📋遇到需求大概意思 给出一个参数通过URI接收一个对象test（可能是两种类的对象）和一个type（判断test类型） 🌌假设：如果type为0，test为TestTest对象， 如果type为1，test为TestTest2对象 🔬实现过程：TestTest.class和TestTest2.class 12345678910111213141">
+<meta property="og:description" content="⭐ 孟应杰的网站: myj.im ⭐  🧐format时间和时间戳Timestamp就是所谓的时间戳。这个主要用在数据库上，你可以再java.sql这个包内找到这个类。 一般数据库里如果用Date这个类的话，那你取出来的时候只能到某一天，也就是日，但是Timestamp的话，就是到小时一直到纳秒，很精确的。 时间戳就是一种类型，只是精度很高，比datetime要精确的多，通常用来防止数据出现脏">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-03-02T01:39:50.000Z">
-<meta property="article:modified_time" content="2025-01-04T20:31:31.814Z">
+<meta property="article:published_time" content="2021-03-13T13:50:40.000Z">
+<meta property="article:modified_time" content="2025-01-05T12:44:34.791Z">
 <meta property="article:author" content="孟应杰">
 <meta property="article:tag" content="java">
-<meta property="article:tag" content="spring">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>🔑json到Object到具体对象 - 孟应杰的小酒馆</title>
+  <title>⏰java中的Format时间和时间戳 - 孟应杰的小酒馆</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +212,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="🔑json到Object到具体对象"></span>
+            <span id="subtitle" data-typed-text="⏰java中的Format时间和时间戳"></span>
           
         </div>
 
@@ -229,8 +228,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2021-03-02 09:39" pubdate>
-          2021年3月2日 上午
+        <time datetime="2021-03-13 21:50" pubdate>
+          2021年3月13日 晚上
         </time>
       </span>
     
@@ -241,7 +240,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.3k 字
+          1.5k 字
         
       </span>
     
@@ -252,7 +251,7 @@
         
         
         
-          12 分钟
+          13 分钟
         
       </span>
     
@@ -289,22 +288,19 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">🔑json到Object到具体对象</h1>
+            <h1 id="seo-header">⏰java中的Format时间和时间戳</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="🏡环境"><a href="#🏡环境" class="headerlink" title="🏡环境"></a>🏡环境</h2><p>SpringBoot + lombok</p>
-<h2 id="📋遇到需求"><a href="#📋遇到需求" class="headerlink" title="📋遇到需求"></a>📋遇到需求</h2><p>大概意思</p>
-<p>给出一个参数通过URI接收一个对象test（可能是两种类的对象）和一个type（判断test类型）</p>
-<h2 id="🌌假设："><a href="#🌌假设：" class="headerlink" title="🌌假设："></a>🌌假设：</h2><p>如果type为0，test为TestTest对象，</p>
-<p>如果type为1，test为TestTest2对象</p>
-<h2 id="🔬实现过程："><a href="#🔬实现过程：" class="headerlink" title="🔬实现过程："></a>🔬实现过程：</h2><p>TestTest.class和TestTest2.class</p>
-<figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-meta">@Data</span><br><span class="hljs-meta">@Accessors(chain = true)</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestTest</span> </span>&#123;<br>    String abc;<br>    String aaa;<br><br>    TestTest2 test2;<br>&#125;<br><br><span class="hljs-meta">@Data</span><br><span class="hljs-meta">@Accessors(chain = true)</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestTest2</span> </span>&#123;<br>    String ddd;<br>    String ccc;<br>&#125;<br></code></pre></div></td></tr></table></figure>
-
-<p>Controler</p>
-<figure class="highlight java"><table><tr><td class="gutter hljs"><div class="hljs code-wrapper"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></div></td><td class="code"><div class="hljs code-wrapper"><pre><code class="hljs java"><span class="hljs-meta">@RestController</span><br><span class="hljs-meta">@RequestMapping(&quot;/api/v1&quot;)</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestController</span> </span>&#123;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Logger log = LoggerFactory.getLogger(TestController.class);<br><br>    <span class="hljs-meta">@PostMapping(&quot;/hello&quot;)</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">helloWorld</span><span class="hljs-params">(String type,</span></span><br><span class="hljs-function"><span class="hljs-params">                             <span class="hljs-meta">@RequestBody</span> Object test)</span> <span class="hljs-keyword">throws</span> IOException </span>&#123;<br>        <br>        log.info(<span class="hljs-string">&quot;test &#123;&#125;&quot;</span>, test.toString());<br>        <span class="hljs-keyword">if</span> (type.equals(<span class="hljs-string">&quot;0&quot;</span>)) &#123;<br>            TestTest testTest = <span class="hljs-keyword">new</span> TestTest();<br>            ObjectMapper objectMapper = <span class="hljs-keyword">new</span> ObjectMapper();<br>            String testString = objectMapper.writeValueAsString(test);<br>            testTest = objectMapper.readValue(testString, TestTest.class);<br>            <span class="hljs-keyword">return</span> testTest.toString();<br>        &#125;<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (type.equals(<span class="hljs-string">&quot;1&quot;</span>))&#123;<br>            TestTest2 testTest2 = <span class="hljs-keyword">new</span> TestTest2();<br>            ObjectMapper objectMapper = <span class="hljs-keyword">new</span> ObjectMapper();<br>            String testString = objectMapper.writeValueAsString(test);<br>            testTest2 = objectMapper.readValue(testString, TestTest2.class);<br>            <span class="hljs-keyword">return</span> testTest2toString();<br>        &#125;<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;error&quot;</span>;<br>    &#125;<br>&#125;<br></code></pre></div></td></tr></table></figure>
-
+                <blockquote>
+<p><a href="https://myj.im/">⭐ 孟应杰的网站: myj.im ⭐</a></p>
+</blockquote>
+<h2 id="🧐format时间和时间戳"><a href="#🧐format时间和时间戳" class="headerlink" title="🧐format时间和时间戳"></a>🧐format时间和时间戳</h2><p>Timestamp就是所谓的时间戳。这个主要用在数据库上，你可以再java.sql这个包内找到这个类。</p>
+<p>一般数据库里如果用Date这个类的话，那你取出来的时候只能到某一天，也就是日，但是Timestamp的话，就是到小时一直到纳秒，很精确的。</p>
+<p>时间戳就是一种类型，只是精度很高，比datetime要精确的多，通常用来防止数据出现脏读现象 。</p>
+<p>时间戳是指格林威治时间1970年01月01日00时00分00秒(北京时间1970年01月01日08时00分00秒)起至现在的总秒数</p>
+<h2 id="🔃java中format时间和时间戳的转换"><a href="#🔃java中format时间和时间戳的转换" class="headerlink" title="🔃java中format时间和时间戳的转换"></a>🔃java中format时间和时间戳的转换</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> java.text.SimpleDateFormat;<br><span class="hljs-keyword">import</span> java.util.Date;<br><br><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@author</span> MengYingjie</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@version</span> 1.0</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@date</span> 2020/10/26 21:33</span><br><span class="hljs-comment"> */</span><br><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test2</span> </span>&#123;<br><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>&#123;<br>        Long SystemTimeStamp = System.currentTimeMillis();<br>        System.out.println(<span class="hljs-string">&quot;时间:&quot;</span> + SystemTimeStamp);<br>        String timeFormat = stampToDate(SystemTimeStamp);<br>        System.out.println(<span class="hljs-string">&quot;时间戳转换为时间:&quot;</span> + timeFormat);<br>        Long timeStamp = dateToStamp(timeFormat);<br>        System.out.println(<span class="hljs-string">&quot;时间转换为时间戳:&quot;</span> + timeStamp);<br>    &#125;<br><br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 将时间转换为时间戳</span><br><span class="hljs-comment">     *</span><br><span class="hljs-comment">     * <span class="hljs-doctag">@param</span> timeFormat format 时间格式</span><br><span class="hljs-comment">     * <span class="hljs-doctag">@return</span> 时间戳时间格式</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Long <span class="hljs-title">dateToStamp</span><span class="hljs-params">(String timeFormat)</span> </span>&#123;<br>        SimpleDateFormat sdf = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>);<br>        Long timeStamp = <span class="hljs-keyword">null</span>;<br>        <span class="hljs-keyword">try</span> &#123;<br>            timeStamp = sdf.parse(timeFormat).getTime();<br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            System.out.println(<span class="hljs-string">&quot;传入了null值&quot;</span>);<br>        &#125;<br>        <span class="hljs-keyword">return</span> timeStamp;<br>    &#125;<br><br>    <span class="hljs-comment">/**</span><br><span class="hljs-comment">     * 将时间戳转换为时间</span><br><span class="hljs-comment">     *</span><br><span class="hljs-comment">     * <span class="hljs-doctag">@param</span> timeStamp 时间戳时间格式</span><br><span class="hljs-comment">     * <span class="hljs-doctag">@return</span> format 时间格式</span><br><span class="hljs-comment">     */</span><br>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title">stampToDate</span><span class="hljs-params">(Long timeStamp)</span> </span>&#123;<br>        SimpleDateFormat format = <span class="hljs-keyword">new</span> SimpleDateFormat(<span class="hljs-string">&quot;yyyy-MM-dd HH:mm:ss&quot;</span>);<br>        String timeFormat = format.format(<span class="hljs-keyword">new</span> Date(timeStamp));<br>        <span class="hljs-keyword">return</span> timeFormat;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 <blockquote>
 <p>遇到此类问题，但看了文章还是未解决<br>评论或加 QQ：781378815</p>
 </blockquote>
@@ -331,7 +327,7 @@
   
     <span>></span>
     
-  <a href="/categories/java/spring/" class="category-chain-item">spring</a>
+  <a href="/categories/java/%E6%8A%80%E5%B7%A7/" class="category-chain-item">技巧</a>
   
   
 
@@ -350,8 +346,6 @@
       
         <a href="/tags/java/" class="print-no-link">#java</a>
       
-        <a href="/tags/spring/" class="print-no-link">#spring</a>
-      
     </div>
   
 </div>
@@ -362,8 +356,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>🔑json到Object到具体对象</div>
-      <div>https://myj.im/archives/🔑json到Object到具体对象/</div>
+      <div>⏰java中的Format时间和时间戳</div>
+      <div>https://myj.im/archives/42-java中的Format时间和时间戳/</div>
     </div>
     <div class="license-meta">
       
@@ -375,7 +369,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2021年3月2日</div>
+          <div>2021年3月13日</div>
         </div>
       
       
@@ -407,15 +401,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/archives/%E7%BE%8E%E5%9B%A2%E7%AC%94%E8%AF%95-%E7%A9%BA%E9%97%B4%E5%9B%9E%E5%BB%8A/" title="🎯美团笔试-空间回廊">
+                      <a href="/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/" title="🎭面具的使用技巧">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">🎯美团笔试-空间回廊</span>
+                        <span class="hidden-mobile">🎭面具的使用技巧</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/archives/41-%E4%B8%BA%E4%BB%80%E4%B9%88JAVA%E5%86%85%E9%83%A8%E7%B1%BB%E8%A6%81%E8%AE%BE%E8%AE%A1%E6%88%90%E9%9D%99%E6%80%81%E5%92%8C%E9%9D%9E%E9%9D%99%E6%80%81/" title="🤔为什么JAVA内部类要设计成静态和非静态">
+                        <span class="hidden-mobile">🤔为什么JAVA内部类要设计成静态和非静态</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>
