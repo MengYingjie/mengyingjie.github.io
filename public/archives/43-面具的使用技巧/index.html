@@ -26,21 +26,21 @@
 <meta property="og:site_name" content="孟应杰的小酒馆">
 <meta property="og:description" content="简介使用NextChat网页应用(ChatGPT Next Web)设置预设对话建立Few-Shot面具，更精准更快捷地使用AI-Chat工具。 面具示例汇总方便第二次阅读使用，第一次阅读可以先看下面具制作过程。           输出 输出 实现路径指南 面具示例   HLD需求分析 LLD第一章     API接口描述 TP用例     伪代码 代码     TP Python脚本">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/1182f70ca6531857175a276bf1b4f2bb_MD5.png">
-<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/18a97818680096f1f60c954cb6f386dd_MD5.png">
-<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/910ba56bc046516ca2eca596131ff90e_MD5.png">
-<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/785aec667de7b8ddc47745f30372f7b0_MD5.png">
-<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/d8c30fb32cfaf40eed9a2591525beedc_MD5.png">
-<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/b7deb45977cb823eec3fc164f62a5866_MD5.png">
-<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/2c570ef6ed5d5c7cad6e9ba5327a3e56_MD5.png">
-<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/1a70270c8c5728677ee3763b55c99bc1_MD5.png">
+<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/1182f70ca6531857175a276bf1b4f2bb_MD5.png">
+<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/18a97818680096f1f60c954cb6f386dd_MD5.png">
+<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/910ba56bc046516ca2eca596131ff90e_MD5.png">
+<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/785aec667de7b8ddc47745f30372f7b0_MD5.png">
+<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/d8c30fb32cfaf40eed9a2591525beedc_MD5.png">
+<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/b7deb45977cb823eec3fc164f62a5866_MD5.png">
+<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/2c570ef6ed5d5c7cad6e9ba5327a3e56_MD5.png">
+<meta property="og:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/1a70270c8c5728677ee3763b55c99bc1_MD5.png">
 <meta property="article:published_time" content="2025-01-04T19:51:15.000Z">
-<meta property="article:modified_time" content="2025-01-13T16:11:06.831Z">
+<meta property="article:modified_time" content="2025-01-13T16:16:26.934Z">
 <meta property="article:author" content="孟应杰">
 <meta property="article:tag" content="ChatGPT">
 <meta property="article:tag" content="AI">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/1182f70ca6531857175a276bf1b4f2bb_MD5.png">
+<meta name="twitter:image" content="https://myj.im/archives/43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/1182f70ca6531857175a276bf1b4f2bb_MD5.png">
   
   
   
@@ -362,7 +362,7 @@
 </blockquote>
 <h1 id="使用Few-Shot制作面具"><a href="#使用Few-Shot制作面具" class="headerlink" title="使用Few-Shot制作面具"></a>使用Few-Shot制作面具</h1><p>区别于我们原来的面具制作，原来的面具（或者提示词）制作全是以用户角度的输入，很难达到训练AI的效果，他只会根据我们的输入内容进行发散回答，导致回答内容很难符合我们的预期。我们以TP生成自动化脚本为例描述面具的制作。</p>
 <h2 id="新建一个面具并设置前置上下文"><a href="#新建一个面具并设置前置上下文" class="headerlink" title="新建一个面具并设置前置上下文"></a>新建一个面具并设置前置上下文</h2><p>点击：面具-查看全部-新建</p>
-<p><img src="43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/1182f70ca6531857175a276bf1b4f2bb_MD5.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="1182f70ca6531857175a276bf1b4f2bb_MD5.png" srcset="/img/loading.gif" lazyload></p>
 <h2 id="设置合适的角色和prompt"><a href="#设置合适的角色和prompt" class="headerlink" title="设置合适的角色和prompt"></a>设置合适的角色和prompt</h2><p>前置对话角色描述：</p>
 <table>
 <thead>
@@ -385,7 +385,7 @@
 </tr>
 </tbody></table>
 <p>以TP生成脚本示例设置提示词：</p>
-<p><img src="43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/18a97818680096f1f60c954cb6f386dd_MD5.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="18a97818680096f1f60c954cb6f386dd_MD5.png" srcset="/img/loading.gif" lazyload></p>
 <p>这里我使用了 1 shot（一个 user + assistant 的问答即 1 shot）来创建这个面具，其中 system 角色定义了 assistant 的主要行为，也就是让模型大概知道它自己是干啥的。后面的 user + assistant prompt 让模型参考应该以何种方式回答问题。指定面具时可以根据需要多设定几个shot。</p>
 <p>具体内容如下：</p>
 <table>
@@ -409,18 +409,18 @@
 </tr>
 </tbody></table>
 <h2 id="附带历史消息数设置为-0"><a href="#附带历史消息数设置为-0" class="headerlink" title="附带历史消息数设置为 0"></a>附带历史消息数设置为 0</h2><p>在使用该工具之前，需要先将设置里的附带历史消息数设置为 0，否则消息历史会对之前做的 Few-shot 产生影响。（因为AI是<strong>链式****思维</strong>）</p>
-<p><img src="43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/910ba56bc046516ca2eca596131ff90e_MD5.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="910ba56bc046516ca2eca596131ff90e_MD5.png" srcset="/img/loading.gif" lazyload></p>
 <h2 id="使用面具"><a href="#使用面具" class="headerlink" title="使用面具"></a>使用面具</h2><p>开始对话</p>
-<p><img src="43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/785aec667de7b8ddc47745f30372f7b0_MD5.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="785aec667de7b8ddc47745f30372f7b0_MD5.png" srcset="/img/loading.gif" lazyload></p>
 <p>输入新的TP脚本</p>
-<p><img src="43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/d8c30fb32cfaf40eed9a2591525beedc_MD5.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="d8c30fb32cfaf40eed9a2591525beedc_MD5.png" srcset="/img/loading.gif" lazyload></p>
 <p>GPT输出：</p>
 <p>经循环测试，每次输出结果都基本一致，脚本可用度比较高。</p>
-<p><img src="43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/b7deb45977cb823eec3fc164f62a5866_MD5.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="b7deb45977cb823eec3fc164f62a5866_MD5.png" srcset="/img/loading.gif" lazyload></p>
 <h2 id="两次面具的对比"><a href="#两次面具的对比" class="headerlink" title="两次面具的对比"></a>两次面具的对比</h2><p>原来的前置对话是这个样子的：</p>
-<p><img src="43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/2c570ef6ed5d5c7cad6e9ba5327a3e56_MD5.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="2c570ef6ed5d5c7cad6e9ba5327a3e56_MD5.png" srcset="/img/loading.gif" lazyload></p>
 <p>现在的前置对话是这样子的：</p>
-<p><img src="43-%E9%9D%A2%E5%85%B7%E7%9A%84%E4%BD%BF%E7%94%A8%E6%8A%80%E5%B7%A7/1a70270c8c5728677ee3763b55c99bc1_MD5.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="1a70270c8c5728677ee3763b55c99bc1_MD5.png" srcset="/img/loading.gif" lazyload></p>
 
                 
               </div>
