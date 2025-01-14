@@ -20,23 +20,8 @@
               "icon": "lucide-file",
               "title": "42-java中的Format时间和时间戳"
             }
-          },
-          {
-            "id": "60700d86cd62592c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "43-面具的使用技巧.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "43-面具的使用技巧"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -173,13 +158,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "60700d86cd62592c",
+  "active": "fe5a99e01d31c095",
   "lastOpenFiles": [
-    "43-面具的使用技巧/785aec667de7b8ddc47745f30372f7b0_MD5.png",
     "43-面具的使用技巧.md",
+    "42-java中的Format时间和时间戳.md",
+    "43-面具的使用技巧/785aec667de7b8ddc47745f30372f7b0_MD5.png",
     "36-美团笔试-空间回廊.md",
     "40-json到Object到具体对象.md",
-    "42-java中的Format时间和时间戳.md",
     "41-为什么JAVA内部类要设计成静态和非静态.md",
     "39-360校招-最后赢家.md",
     "37-携程校招-携程海洋馆的海豚小宝宝.md",
